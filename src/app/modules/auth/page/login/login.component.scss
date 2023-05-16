@@ -1,0 +1,376 @@
+.login-container {
+    background-color: #fff;
+}
+.login-header {
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0px 10px 8px -8px rgba(0, 0, 0, 0.2);
+    div {
+        max-width: 1400px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        img {
+            cursor: pointer;
+        }
+    }
+    @media screen and (max-width: 1450px){
+        padding-left: 30px;
+    }
+}
+.login-mobile {
+    width: 100%;
+    height: auto;
+    display: none;
+    @media screen and (max-width: 1050px){
+        display: flex;
+    }
+}
+.login-form {
+    margin: auto;
+    max-width: 1400px;
+    height: 660px;
+    background: url('../../../../../assets/image/login.png') no-repeat;
+    background-position: center;
+    padding-top: 64px;
+    @media screen and (max-width: 1050px){
+        padding: 0;
+        background: #F9FCFd;
+        display: flex;
+        height: fit-content;
+        padding-bottom: 30px;
+        justify-content: center;
+    }
+}
+.login-form-modal {
+    padding: 51px 32px 24px;
+    background: rgba(243, 243, 243, 0.9);
+    border-radius: 8px;
+    max-width: 390px;
+    margin-left: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p {
+        margin: 0;
+        transition: all .3s ease-in-out;
+        span {
+            text-decoration: underline;
+            &:hover {
+                background-color: #d3dde1;
+            }
+        }
+        
+    }
+    span {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        color: #0077B3;
+        cursor: pointer;
+        transition: all .3s ease-in-out;
+        margin: 30px 0 20px;
+        &:hover {
+            background-color: #d9e2e6;
+        }
+    }
+    button {
+        height: 70px;
+        background: #0077B3;
+        border: 2px solid #0077B3;
+        border-radius: 4px;
+        font-weight: 600;
+        font-size: 15px;    
+        line-height: 18px;
+        display: flex;
+        align-items: center;
+        transition: all .3s ease-in-out;
+        justify-content: center;
+        cursor: pointer;
+        color: #FFFFFF;
+        width: 100%;
+        i {
+            font-size: 13px;
+            color: #fff;
+            margin-left: 15px;
+        }
+        &:hover {
+            background-color: #2862a4;
+        }
+    }
+    h1 {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 45px;
+        color: #405E7C;
+        margin-bottom: 18px;
+    }
+    input {
+        height: 44px;
+        background: #FFFFFF;
+        border: 1px solid #707070;
+        border-radius: 4px;
+        padding: 0 12px;
+        outline: none;
+        font-weight: 400;
+        font-size: 15px;
+        width: 100%;
+        line-height: 18px;
+        color: #757575;
+        &:focus {
+            border: 0.125rem solid #0077b3;
+            box-shadow: 0 0 0.5rem rgba(143,216,242,.75);
+        }
+    }
+    @media screen and (max-width: 1050px){
+        // max-width: 100%;
+        padding: 0;
+        background-color: transparent;
+        margin-top: 0;
+        border-radius: 0;
+        margin-left: 0;
+    }
+}
+.login-form-password-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+    input {
+        padding-right: 70px;
+    }
+    span {
+        position: absolute;
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 14px;
+        transition: all .3s ease-in-out;
+        text-transform: uppercase;
+        color: #707070;
+        text-decoration: underline;
+        right: 20px;
+        margin: 0;
+        cursor: pointer;
+        &:hover {
+            background-color: #f3f9fc;
+        }
+    }
+}
+.login-form-saveID {
+    margin: 40px 0 20px;
+    display: flex;
+    align-items: center;
+
+    height: 30px;
+    width: 100%;
+    input {
+        border: 1px solid red;
+        width: 30px;
+        &:focus {
+            border: none;
+            box-shadow: none;
+        }
+    }
+    span {
+        margin: 0;
+        margin-left: 15px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        color: #2D2D2D;
+        &:hover{
+            background-color: unset;
+            cursor: unset;
+        }
+    }
+}
+.login-payment {    
+    display: flex;
+    padding: 40px 0;
+    background-color: #fff;
+    max-width: 1400px;
+    margin: auto;
+    justify-content: center;
+    div {
+        display: flex;
+        & > :not(:first-child) {
+            margin-left: 16px;
+        }
+    }
+    span {
+        b {
+            font-weight: 700;
+        }
+        margin-right: 24px;
+        font-size: 15px;
+        line-height: 24px;
+        color: #767676;
+    }
+    button {
+        width: 320px;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 600;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        font-size: 15px;
+        line-height: 18px;
+        color: #FFFFFF;
+        background: #405E7C;
+        border-radius: 4px;
+        i {
+            margin-left: 15px;
+        }
+    }
+    @media screen and (max-width: 1200px){
+        flex-direction: column;
+        align-items: center;
+        span {
+            margin-right: 0;
+        }
+        div {
+            margin-top: 20px;
+        }
+        button {
+            width: 220px;
+        }
+    }
+    @media screen and (max-width: 500px){
+        span {
+            width: 90%;
+            text-align: center;
+        }
+        div {
+            flex-direction: column;
+            & > :not(:first-child) {
+                margin-left: 0;
+                margin-top: 10px;
+            }
+        }
+    }
+}
+.login-progressive-app {
+    display: flex;
+    max-width: 1400px;
+    margin: auto;
+    padding-top: 32px;
+    background: linear-gradient(180deg, #F5F5F5 0%, #FFFFFF 100%);
+    justify-content: center;
+    border-bottom: 1px solid #dcdcdc;
+    .progressive-app-img-mobile {
+        display: none;
+        width: 127px;
+        height: 127px;
+    }
+    @media screen and (max-width: 700px) {
+        .progressive-app-img {
+            display: none;
+        }
+        .progressive-app-img-mobile {
+            display: flex;
+        }
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-bottom: 30px;
+        border-bottom: #707070;
+    }
+}
+.login-progressive-app-content {
+    max-width: 490px;
+    margin-left: 16px;
+    h1 {
+        font-weight: 600;
+        font-size: 19px;
+        line-height: 30px;
+        color: #405E7C;
+    }
+    span {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 24px;
+        color: #767676;
+    }
+}
+.login-google-play {
+    display: flex;
+    margin: 16px 0;
+    & > :not(:first-child) {
+        margin-left: 5px;
+    }
+    img {
+        cursor: pointer;
+    }
+    @media screen and (max-width: 700px){
+        justify-content: center;
+    }
+}
+.login-insurance-container {
+    max-width: 1400px;
+    margin: auto;
+    padding: 57px 0 65px;
+    @media screen and (max-width: 1450px){
+        padding: 57px 30px 65px;
+    }
+
+}
+.login-insurance-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    & > :not(:last-child) {
+        margin-right: 32px;
+    }
+    span {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 18px;
+        transition: all .3s ease-in-out;
+        cursor: pointer;
+        margin: 10px 0;
+        color: #0077B3;
+        &:hover {
+            background-color: #dde9ef;
+        }
+    }
+    @media screen and (max-width: 800px){
+        flex-direction: column;
+        align-items: center;
+        span {
+            border-bottom: 2px solid #f2f7fa;
+            width: 100%;
+            text-align: center;
+            padding-bottom: 20px;
+        }
+    }
+}
+.login-insurance-content {
+    span {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 24px;
+        color: #767676;
+        b {
+            color: #0077B3;
+            text-decoration: underline;
+            cursor: pointer;
+            font-weight: normal;
+            transition: all .3s ease-in-out;
+            &:hover {
+                background: rgba(0, 119, 179, 0.1);
+            }
+        }
+    }
+    @media screen and (max-width: 800px) {
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+    }
+}
